@@ -10,12 +10,12 @@ import { CarTypes } from '../Enum/carTypes';
 })
 export class AddCarComponent {
 
-  constructor(private carService: CarService) {}
+  constructor(private carService: CarService) { }
 
   addForm = new FormGroup({
-    model : new FormControl('', Validators.required),
-    description : new FormControl('', Validators.required),
-    type : new FormControl('', Validators.required),
+    model: new FormControl('', Validators.required),
+    description: new FormControl('', Validators.required),
+    type: new FormControl('', Validators.required),
     image: new FormControl('', Validators.required)
   })
 
@@ -25,5 +25,4 @@ export class AddCarComponent {
 
   keys = Object.keys;
   carTypes = CarTypes;
-  
 }

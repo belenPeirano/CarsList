@@ -1,5 +1,10 @@
+<div class="filter">
+    <p>Search by model:</p>
+    <input type="text" placeholder="Insert Model" #filter>
+    <button type="button" (click)="searchCarsByModel(filter.value)">Filter</button>
+</div>
 <div class="cars-container">
-    <div *ngFor="let car of cars">
+    <div *ngFor="let car of filteredCarsList">
         <app-cars [car]="car"></app-cars>
     </div>
 </div>

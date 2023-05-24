@@ -49,18 +49,15 @@ export class CarService {
   addCar(Model: string, Description: string, Type: CarTypes, Image: string): boolean {
     const car: Car = { id: ++this.id, model: Model, description: Description, type: Type, image: Image };
     this.CARS.push(car);
+
     console.log(this.CARS);
     return true;
   }
 
   deleteCar(car: Car) {
     const index = this.CARS.findIndex((obj) => {
-      return obj.description === car.description;
+      return obj.id === car.id;
     });
     this.CARS.splice(index, 1);
   }
-
-  /*getCarById(id: number): Car {
-    return this.CARS.find(car => car.id === id);
-  }*/
 }

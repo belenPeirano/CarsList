@@ -4,3 +4,17 @@
     justify-content: space-around;
     margin: 2rem;
 }
+
+.filter {
+    display: flex;
+    justify-content: flex-end;
+}
+
+input {
+    height: 1rem;
+    margin: 1rem;
+}
+
+button {
+    height: 1.5rem;
+}
