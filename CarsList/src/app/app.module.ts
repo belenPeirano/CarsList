@@ -7,13 +7,17 @@ import { CarsComponent } from './car/car.component';
 import { CarsListComponent } from './cars-list/cars-list.component';
 import { AddCarComponent } from './add-car/add-car.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DetailsComponent } from './details/details.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarsComponent,
     CarsListComponent,
-    AddCarComponent
+    AddCarComponent,
+    DetailsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

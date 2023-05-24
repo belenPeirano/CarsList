@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { CarService } from '../services/car.service';
+import { CarTypes } from '../Enum/carTypes';
 
 @Component({
   selector: 'app-add-car',
@@ -21,5 +22,8 @@ export class AddCarComponent {
   addCar(addForm: FormGroup) {
     this.carService.addCar(addForm.value.model, addForm.value.description, addForm.value.type, addForm.value.image);
   }
+
+  keys = Object.keys;
+  carTypes = CarTypes;
   
 }
